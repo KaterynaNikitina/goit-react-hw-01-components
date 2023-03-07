@@ -1,0 +1,37 @@
+/* .transactionHistory {
+    width: 750px;
+
+} */
+.head {
+    background-color: rgb(46, 246, 226);
+    color: white;
+    text-transform: uppercase;
+}
+.headrow {
+
+font-size: 14px;
+}
+th {
+    width: 250px;
+}
+.row {
+    /* width: 250px; */
+    height: 35px;
+    font-size: 14px;
+    text-align: center;
+}
+.typerow {
+    /* width: 250px; */
+    height: 35px;
+    font-size: 14px;
+    /* text-align: center; */
+    padding-left: 100px;
+    text-transform: capitalize;
+}
+tr:nth-child(even) {
+    background-color: rgb(229, 238, 243);
+}
+.typecell {
+    /* padding-left: 100px; */
+    text-align: center;
+}
