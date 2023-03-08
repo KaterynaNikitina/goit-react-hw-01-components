@@ -1,5 +1,6 @@
 import { StatisticsItems } from './StatisticsItems';
 import css from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -12,3 +13,13 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 
+Statistics.propTypes = {
+  statistics: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};
